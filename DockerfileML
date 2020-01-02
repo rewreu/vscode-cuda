@@ -1,0 +1,16 @@
+FROM: rewreu/vscode-cuda:base
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends python3.7 && \
+    python3.7 -m pip install pip && \
+    pip3 install setuptools && \
+    pip3 install torch 
+    torchvision \
+    numpy \
+    scipy \
+    pandas \
+    scikit-learn \
+    matplotlib \
+    jupyter \
+    Cython
+    
+USER coder

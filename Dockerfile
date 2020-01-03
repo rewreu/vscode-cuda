@@ -1,4 +1,4 @@
-FROM codercom/code-server
+FROM codercom/code-server:Visual Studio IntelliCode
 
 USER root
 RUN apt-get update && apt-get install -y --no-install-recommends \

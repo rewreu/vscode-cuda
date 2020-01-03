@@ -1,4 +1,4 @@
-FROM codercom/code-server:Visual Studio IntelliCode
+FROM codercom/code-server:2.1699-vsc1.41.0
 
 USER root
 RUN apt-get update && apt-get install -y --no-install-recommends \
